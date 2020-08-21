@@ -1,0 +1,25 @@
+.container{
+ margin:10px;
+ padding:10px;
+ font-size:1.2em;
+ border-radius: 10px;
+ box-shadow:0 0 4px #212121;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+.btn{
+    text-decoration:none;
+    color:#fff;
+    padding:10px;
+    background:linear-gradient(30deg, rgb(90, 189, 255) 0%, rgb(71, 104, 180) 100%);
+    border-radius: 5px;
+}
+
+.more{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
