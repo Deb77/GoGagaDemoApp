@@ -1,0 +1,32 @@
+.container{
+    margin:10%;
+    font-size:1
+}
+
+.upper{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.box{
+    border-radius:10px;
+    box-shadow: 2px 2px 2px #616161;
+    padding:15px;  
+    min-width:100px; 
+    text-align: center;
+    margin:10px;
+}
+
+.title{
+    font-family: 'Roboto';
+    font-weight:500;
+    font-size:1.2em;
+}
+
+.text{
+    color:#424242;
+    font-size:1.1em;
+}

@@ -1,15 +1,16 @@
 import React from 'react';
-import Navbar from './components/Navbar/Navbar';
-import Posts from './components/PostContainer/PostContainer';
-import Footer from './components/Footer/Footer';
-
+import Home from './pages/Home';
+import Details from './pages/Details';
+import {
+  BrowserRouter as Router,
+  Route,
+} from "react-router-dom";
 function App() {
   return (
-    <div>
-      <Navbar/>
-      <Posts/>
-      <Footer/>
-    </div>
+    <Router>
+      <Route exact path ="/" component={Home}/>
+      <Route exact path="/details" component={Details}/>
+    </Router>
   );
 }
 

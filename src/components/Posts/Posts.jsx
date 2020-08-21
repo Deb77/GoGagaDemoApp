@@ -1,13 +1,14 @@
 import React from 'react'
 import styles from './Posts.module.css';
 import {ThumbsUp, ThumbsDown} from 'react-feather';
+import {Link} from "react-router-dom";
 
-const Post = ({title}) => {
+const Post = ({post}) => {
     return (
         <div className={styles.container}>
-            <p>{title}</p>
+            <p>{post.title}</p>
             <div className={styles.more}>
-                <a className={styles.btn} href="#">Details</a>
+                <Link className={styles.btn} to={{pathname:"/details",state:{post:post}}}><span>Details</span></Link>
                 <div>
                     <ThumbsUp/>
                     <ThumbsDown/>
