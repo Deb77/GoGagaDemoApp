@@ -1,6 +1,7 @@
 import React, { useEffect,useState } from 'react'
 import Navbar from '../components/Navbar/Navbar';
 import Reviews from '../components/Reviews/Reviews';
+import Footer from '../components/Footer/Footer';
 
 const Details = (props) => {
     const [post,setPost] = useState({})
@@ -14,6 +15,7 @@ const Details = (props) => {
             {post && (
                 <Reviews post={post}/>
             )}
+            <Footer/>
         </div>
     )
 }

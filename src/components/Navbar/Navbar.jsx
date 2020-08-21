@@ -8,7 +8,7 @@ const Navbar = ({title}) => {
         <div className={styles.navbar}>
            <div className={styles.container}>
             <Link to="/" className={styles.title}><Aperture/><p>DeBlog</p></Link>
-            <li className={styles.icon}><Search/><p>Search</p></li>  
+            <Link to="/search" className={styles.icon}><Search/><p>Search</p></Link>  
             </div> 
             <p className={styles.header}>{title}</p>
         </div>
