@@ -25,7 +25,7 @@ const Posts = ({query}) => {
 
     return (
         <div className={styles.container}>
-            {name?(posts.filter(post =>(post.body.includes(query)||post.title.includes(query))).map((filterpost,k) => (
+            {posts&&name?(posts.filter(post =>(post.body.includes(query)||post.title.includes(query))).map((filterpost,k) => (
                 <Post key={k} post={filterpost}/>
             ))):
             (posts.map((post,k) => (
