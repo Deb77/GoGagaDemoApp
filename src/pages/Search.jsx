@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import Posts from '../components/PostContainer/PostContainer';
+import Footer from '../components/Footer/Footer';
 
 const Search = () => {
     const [text,setText] = useState("");
@@ -21,6 +22,7 @@ const Search = () => {
             </div>
             
             <Posts query={text}/>
+            <Footer/>
         </div>
     )
 }

@@ -12,7 +12,6 @@ const Posts = ({query}) => {
     const indexOfLastPost = currentPage * postsPerPage;
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
     const currentPosts = posts.slice(indexOfFirstPost,indexOfLastPost);
-
     const paginate = (pageNumber) => setCurrentPage(pageNumber)
     useEffect(()=>{
         const fetchData = async() => {
@@ -40,7 +39,7 @@ const Posts = ({query}) => {
                 <Post key={k} post={post}/>
             )))}
             </div>
-            {currentPosts?(<Pagination 
+            {(currentPosts&&(query===undefined))?(<Pagination 
             postsPerPage={postsPerPage} 
             totalPosts={posts.length}
             paginate={paginate}
