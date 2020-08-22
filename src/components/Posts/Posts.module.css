@@ -7,6 +7,7 @@
  display: flex;
  flex-direction: column;
  justify-content: space-between;
+ 
 }
 
 .btn{
@@ -21,5 +22,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.container:hover{
+    transform: scale(1.05);
 }
 
