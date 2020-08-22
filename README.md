@@ -1,7 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Link To Project
-[live](https://go-gaga-demo-app.vercel.app)
+[Demo](https://go-gaga-demo-app.vercel.app)
 
 ## Available Scripts
 
