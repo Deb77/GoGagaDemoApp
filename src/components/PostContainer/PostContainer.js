@@ -2,9 +2,11 @@ import React,{useEffect,useState} from 'react'
 import Axios from 'axios'
 import Post from '../Posts/Posts';
 import styles from './PostContainer.module.css';
+
 const Posts = ({query}) => {
     const [name,setName] = useState(false)
     const [posts,setPosts] = useState([])
+
     useEffect(()=>{
         const fetchData = async() => {
             await Axios.get("https://jsonplaceholder.typicode.com/posts")

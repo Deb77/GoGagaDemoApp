@@ -9,7 +9,7 @@
     margin:0;
     color:#fff;
     font-family: Roboto;
-    animation: down 1.5s forwards 0s linear;
+    animation: down 1.5s ease-in 0s linear;
 }
 
 
@@ -40,12 +40,12 @@
     text-align:center;
     padding:30px;
     font-family: Playball;
-    animation: down 1.5s forwards 0s linear;
+    animation: down 0.5s forwards 0s linear;
 }
 
 @keyframes down{
     0%{
-        transform: translateY(-20%);
+        transform: translateY(-10%);
         opacity: 0;
         }  
     100%{
