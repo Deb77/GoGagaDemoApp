@@ -13,7 +13,7 @@ const Pagination = ({postsPerPage, totalPosts,paginate}) => {
             <div className={styles.container}>
                 {pageNumbers.map(number => (
                     <span className={styles.item} key={number}>
-                        <span className={styles.highlight} onClick={() => (paginate(number), setPage(number))}>{number}</span>
+                        <a href="#" className={styles.highlight} onClick={() => (paginate(number), setPage(number))}>{number}</a>
                     </span>
                 ))}
             </div>    
